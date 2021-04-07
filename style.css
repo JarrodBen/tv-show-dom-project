@@ -1,3 +1,50 @@
+body{
+  box-sizing: border-box;
+  background-color: white;
+  color: rgb(58, 58, 58);
+  font-size: 20px;
+}
 #root {
-  color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#root div{
+  border-radius: 10px;
+  flex-basis: 24%;
+  margin: 16px 2px 16px 2px;
+  background-color:white ;
+  margin: 2rem;
+  box-shadow: -3px -2px 5px black ;
+}
+
+#root div h3{
+  text-align: center;
+  padding: 13px;
+}
+
+#root div img{
+  display: block;
+  margin: auto;
+}
+
+#root div p{
+  padding: 20px;
+}
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% 0% 0% 9%;
+}
+input, select{
+  border: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 10px;
+  margin-right: 32px;
+  flex-basis: 20%;
+}
+input:focus{
+  border: none;
+  outline: none;
 }

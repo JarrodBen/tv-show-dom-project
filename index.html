@@ -9,12 +9,20 @@
   </head>
 
   <body>
+
+    <div class = "search">
+      <select name = "select" id = "select">
+        <option value = "" selected>Episodes</option>
+      </select>
+      <input class = "text" type = "text" id = "searchText" name = "search" placeholder = "Search Episodes">
+      <p>Displaying a total of: <span id = "result">73</span> of <span id = "allEpisodes"></span> episodes</p>
+    </div>
+
     <div id="root">
     </div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
-    <p>This is sortof like Netflix</p>
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
   </body>
