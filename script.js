@@ -170,10 +170,10 @@ function setup() {
   function getAllEpisodes(allEpisodes) {
     makePageForEpisodes(allEpisodes); 
     addOptions(allEpisodes); 
-    document.getElementById("selectAShow").addEventListener("change", function (e) {
+    document.getElementById("selectAEpisode").addEventListener("change", function (e) {
       e.preventDefault();
 
-      let epiSelect = document.getElementById("selectAShow").value;
+      let epiSelect = document.getElementById("selectAEpisode").value;
       let input = epiSelect.slice(9, epiSelect.length);
       let epiDis = allEpisodes.filter((element) => {
         if (element.name.includes(input)) {
@@ -370,7 +370,7 @@ function addTvShowOptions(liTotalEpi) {
 
 
 function addOptions(liTotalEpi) {
-  let select = document.getElementById("selectAShow");
+  let select = document.getElementById("selectAEpisode");
   select.innerHTML = " ";
   liTotalEpi.forEach((element) => {
     let option = document.createElement("option");
