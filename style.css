@@ -1,3 +1,88 @@
+body{
+  box-sizing: border-box;
+  background-color: white;
+  color: rgb(58, 58, 58);
+  font-size: 20px;
+}
 #root {
-  color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#root div{
+  border-radius: 10px;
+  flex-basis: 24%;
+  margin: 16px 2px 16px 2px;
+  background-color:white ;
+  margin: 2rem;
+  box-shadow: -3px -2px 5px black ;
+}
+
+#root div h3{
+  text-align: center;
+  padding: 13px;
+}
+
+#root div img{
+  display: block;
+  margin: auto;
+}
+
+#root div p{
+  padding: 20px;
+}
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% 0% 0% 9%;
+}
+input, select{
+  border: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 10px;
+  margin-right: 32px;
+  flex-basis: 20%;
+}
+input:focus{
+  border: none;
+  outline: none;
+}
+
+#search{
+  display: none;
+}
+#root{
+  display: none ;
+}
+#theTvShows{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#theTvShows div{
+  display: flex;
+  align-items: center;
+  box-shadow: -2px 1px 10px #cccccc ;
+  background-color:#FFFFFF ;
+  margin: 16px 64px 16px 64px;
+}
+#theTvShows div h3 {
+ order: 1;
+ margin: 8px;
+ flex-basis: 15%;
+}
+#theTvShows div img{
+  order: 0;
+}
+#theTvShows div p{
+  order: 2;
+  margin: 8px;
+  flex-basis: 45%;
+}
+#theTvShows div section{
+  order: 3;
+  margin: 16px;
+  flex-basis: 30%;
+  box-shadow: -0px -0px 4px #cccccc ;
 }
